@@ -1,8 +1,6 @@
 # ✨ SparkEDU
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)  
-[![Node.js](https://img.shields.io/badge/Node.js-v18+-green)](https://nodejs.org/)  
-[![React](https://img.shields.io/badge/React-v18-blue)](https://reactjs.org/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)  [![Node.js](https://img.shields.io/badge/Node.js-v18+-green)](https://nodejs.org/)  [![React](https://img.shields.io/badge/React-v18-blue)](https://reactjs.org/)  
 
 Plataforma web educacional construída com **React** e **Node.js**, projetada para oferecer uma experiência educacional fluida e moderna.
 
@@ -32,36 +30,44 @@ Siga os passos abaixo para rodar o projeto localmente.
 
 ```bash
 cd Frontend
+```
 
-Instale as dependências:
+2. Instale as dependências:
 
 ```bash
 npm install
+```
 
-Inicie o servidor de desenvolvimento:
+3. Inicie o servidor de desenvolvimento:
 
+```bash
 npm run dev
-
+```
 
 O aplicativo estará disponível em http://localhost:5173
 
-🔹 Backend
+###🔹 Backend
 
-Abra um novo terminal e vá para o diretório do backend:
+1. Abra um novo terminal e vá para o diretório do backend:
 
+```bash
 cd Backend
+```
 
 
-Instale as dependências:
+2. Instale as dependências:
 
+```bash
 npm install
+```
 
+3. Inicie o servidor da API:
 
-Inicie o servidor da API:
-
+```bash
 npm start
+```
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 Frontend: React, Vite, React Router
 
@@ -69,7 +75,9 @@ Backend: Node.js, Express (presumido)
 
 Estilização: CSS 3
 
-📂 Estrutura de Pastas
+### 📂 Estrutura de Pastas
+
+```bash
 SPARKEDU/
 ├── Backend/
 │   ├── routes/             # Rotas da API
@@ -87,7 +95,8 @@ SPARKEDU/
     │   ├── routes/         # Componentes e lógica de roteamento
     │   └── App.jsx         # Componente principal
     └── ...
+```
 
-📜 Licença
+###📜 Licença
 
 Distribuído sob a Licença MIT. Veja LICENSE.md para mais informações.
