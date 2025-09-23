@@ -1,16 +1,9 @@
-const express = require("express");
-const cors = require("cors");
-
+const express = require('express');
+const path = require('path');
 const app = express();
 
-app.use(cors());
-app.use(express.json());
-
-// Servir arquivos estáticos da pasta 'public'
-app.use(express.static("public"));
-
-// Importa rotas
-const productRoutes = require("./routes/productRoutes");
-app.use("/api/products", productRoutes);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../Frontend/HTMLCSS/index.html'));
+});
 
 module.exports = app;
