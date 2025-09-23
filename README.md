@@ -1,51 +1,68 @@
-✨ SparkEDU
-Plataforma web educacional construída com React e Node.js.
-🎯 Sobre o Projeto
-O SparkEDU é uma aplicação web completa, projetada para oferecer uma experiência educacional fluida e moderna. A arquitetura do projeto é dividida entre um frontend dinâmico e um backend robusto, comunicando-se através de uma API.
+# ✨ SparkEDU
 
-🚀 Início Rápido
-Para colocar o projeto no ar, clone este repositório e siga os passos de configuração para o frontend e backend.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)  
+[![Node.js](https://img.shields.io/badge/Node.js-v18+-green)](https://nodejs.org/)  
+[![React](https://img.shields.io/badge/React-v18-blue)](https://reactjs.org/)  
 
-Pré-requisitos
-Node.js (versão 18 ou superior)
+Plataforma web educacional construída com **React** e **Node.js**, projetada para oferecer uma experiência educacional fluida e moderna.
 
-npm (gerenciador de pacotes do Node.js)
+---
 
-Frontend
-Navegue até o diretório do frontend:
+## 🎯 Sobre o Projeto
 
-Bash
+O SparkEDU é uma aplicação web completa, com **frontend dinâmico** e **backend robusto**, comunicando-se através de uma API.  
+O objetivo é fornecer uma experiência de aprendizado online moderna e intuitiva.
 
+---
+
+## 🚀 Início Rápido
+
+Siga os passos abaixo para rodar o projeto localmente.
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)  
+- npm (gerenciador de pacotes do Node.js)
+
+---
+
+### 🔹 Frontend
+
+1. Navegue até o diretório do frontend:
+
+```bash
 cd Frontend
-Instale todas as dependências do projeto:
 
-Bash
+Instale as dependências:
 
+```bash
 npm install
+
 Inicie o servidor de desenvolvimento:
 
-Bash
-
 npm run dev
-O aplicativo estará disponível em http://localhost:5173 (ou outra porta, conforme o Vite informar).
 
-Backend
-Abra um novo terminal e navegue até o diretório do backend:
 
-Bash
+O aplicativo estará disponível em http://localhost:5173
+
+🔹 Backend
+
+Abra um novo terminal e vá para o diretório do backend:
 
 cd Backend
-Instale as dependências da API:
 
-Bash
+
+Instale as dependências:
 
 npm install
+
+
 Inicie o servidor da API:
 
-Bash
-
 npm start
+
 🛠️ Tech Stack
+
 Frontend: React, Vite, React Router
 
 Backend: Node.js, Express (presumido)
@@ -53,8 +70,6 @@ Backend: Node.js, Express (presumido)
 Estilização: CSS 3
 
 📂 Estrutura de Pastas
-A organização do projeto é uma arquitetura modular, onde cada componente e funcionalidade tem seu próprio espaço.
-
 SPARKEDU/
 ├── Backend/
 │   ├── routes/             # Rotas da API
@@ -62,15 +77,17 @@ SPARKEDU/
 │   └── ...
 │
 └── Frontend/
-    ├── public/             # Arquivos públicos (e.g., index.html, favicon)
+    ├── public/             # Arquivos públicos (index.html, favicon, etc.)
     ├── src/
     │   ├── api/            # Funções para comunicação com a API
     │   ├── assets/         # Recursos estáticos (imagens, estilos globais)
-    │   ├── components/     # Componentes reutilizáveis (botões, cards, formulários)
+    │   ├── components/     # Componentes reutilizáveis
     │   ├── layouts/        # Estruturas de página (AuthLayout, MainLayout)
-    │   ├── pages/          # Telas completas (e.g., LoginPage, DashboardPage)
+    │   ├── pages/          # Telas completas (LoginPage, DashboardPage)
     │   ├── routes/         # Componentes e lógica de roteamento
     │   └── App.jsx         # Componente principal
     └── ...
+
 📜 Licença
+
 Distribuído sob a Licença MIT. Veja LICENSE.md para mais informações.
