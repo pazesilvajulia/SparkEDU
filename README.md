@@ -46,7 +46,7 @@ npm run dev
 
 O aplicativo estará disponível em http://localhost:5173
 
-###🔹 Backend
+### 🔹 Backend
 
 1. Abra um novo terminal e vá para o diretório do backend:
 
@@ -97,6 +97,6 @@ SPARKEDU/
     └── ...
 ```
 
-###📜 Licença
+### 📜 Licença
 
 Distribuído sob a Licença MIT. Veja LICENSE.md para mais informações.
