@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+form > img{
+    margin: 5vh 0 0 0;
+
+}
+
 .auth-container{
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -28,8 +33,51 @@ h2{
 }
 
 input{
+    padding-left: 2vh;
     border-color: rgba(0, 0, 0, 0.164);
     border-radius: 5px;
     height: 5vh;
     width: 20vw;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.24);
+}
+
+.btn-primary{
+    background-color: orange;
+    border-radius: 30px;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    margin: 1vh 0 2vh 0;
+}
+
+.register-link{
+    margin: 3vh 0 0 0;
+}
+
+.register-link > a{
+    color:darkcyan;
+    text-decoration: underline;
+    
+}
+
+
+.line{
+    height: 0.1vh;
+    width: 30vw;
+    background-color: rgb(212, 212, 212);
+}
+
+.socials{
+    margin: 2vh 0 0 0;
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.btn-socials{
+    margin: 0;
+    
 }
