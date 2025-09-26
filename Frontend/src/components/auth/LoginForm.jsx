@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../assets/styles/LoginForm.css';
+import LogoPreta from '../../assets/images/logoPRETA.png';
 // IMPORTAR CSS ESPECÍFICO AQUI
 
 function LoginForm() {
@@ -17,7 +18,7 @@ function LoginForm() {
     return (
         <form className="login-form" onSubmit={handleSubmit}>
 
-            <img src="#" alt="Logo SparkEDU branca"></img>
+            <img src={LogoPreta} alt="Logo SparkEDU branca" />            
             <h2>Bem-vindo de volta!</h2>
             
             <div className="form-group">
