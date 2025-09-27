@@ -6,9 +6,10 @@ import ProtectedRoutes from './ProtectedRoutes'; // 🚨 IMPORTAÇÃO
 // Importe suas páginas
 import LoginPage from '../pages/LoginPage';
 import DashboardPage from '../pages/DashboardPage';
+import HomePagePublic from '../pages/HomePagePublic';
 // ... outras páginas
 
-const HomePagePublic = () => <h1>Bem-vindo ao SparkEDU! Faça Login!</h1>;
+
 
 function AppRouter() {
     return (

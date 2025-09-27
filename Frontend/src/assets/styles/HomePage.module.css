@@ -1,0 +1,19 @@
+.appContainer{
+    height: auto;
+}
+
+header{
+    height: 8vh; 
+}
+
+.section1{
+    height: 92vh;
+    background-color: yellow;
+
+}
+
+.section2{
+    height: 100vh;
+    background-color: rgb(255, 0, 242);
+    
+}

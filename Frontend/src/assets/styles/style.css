@@ -60,25 +60,3 @@ body{
     flex-direction: column;
     gap: 2vh;
 }
-
-section{
-    background-color: rgb(94, 177, 177);
-    height: 10px;
-
-}
-
-article{
-    background-color: rgb(28, 193, 25);
-    height: 10px;
-}
-
-aside{
-    background-color: rgb(221, 84, 205);
-    height: 10px;
-}
-
-footer{
-    background-color: rgb(213, 200, 18);
-    height: 10px;
-
-}
