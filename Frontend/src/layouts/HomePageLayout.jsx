@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../assets/styles/HomePage.module.css';
 import LogoPreta from '../assets/images/logoPRETA.png';
+import mainImage from '../assets/images/mainImage.png';
 
 // IMPORTAR CSS ESPECÍFICO AQUI
 
@@ -43,7 +44,6 @@ function HomePageLayout() {
 
             
             <main>  {/* Todo conteudo menos header e footer */}
-
                 <article>
                     <section className={styles.section1}> {/* Secao de conteudo individual */}
 
@@ -55,7 +55,7 @@ function HomePageLayout() {
                             <a href='#'>botao legal</a>
                         </div>
                         
-                        <img src='#' alt='imagem legal'/>
+                        <img src={mainImage} alt='imagem legal'/>
                     </section>
 
                     <section className={styles.section2}>
