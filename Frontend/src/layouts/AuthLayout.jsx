@@ -1,4 +1,5 @@
 import React from 'react';
+
 // Não importar sidebar
 
 // Estilo e estrutura de Login e Cadastro

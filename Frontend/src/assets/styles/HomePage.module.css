@@ -7,8 +7,10 @@ header{
 }
 
 .section1{
+    position: relative;
     height: 92vh;
-    background-color: yellow;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -16,4 +18,41 @@ header{
     height: 100vh;
     background-color: rgb(255, 0, 242);
     
+}
+
+.mainContent{
+    margin: 0 0 0 3vw;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainContent > h1{
+    font-size: 6vh;
+    font-weight: bold;
+
+}
+
+.mainContent > h2{
+    font-size: 4vh;
+    font-weight: bold;
+
+}
+
+.mainContent > p{
+    font-size: 2vh;
+
+}
+
+.mainContent > a{
+    display: flex;
+    font-size: 2vh;
+    background-color: orange;
+    border-radius: 30px;
+    width: 8vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
 }
