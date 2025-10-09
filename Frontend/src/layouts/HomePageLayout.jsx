@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../assets/styles/HomePage.module.css';
-import LogoPreta from '../assets/images/logoPRETA.png';
+import LogoBranca from '../assets/images/logoBRANCA.png';
 import mainImage from '../assets/images/mainImage.png';
 
 // IMPORTAR CSS ESPECÍFICO AQUI
@@ -10,11 +10,11 @@ function HomePageLayout({ onLoginClick, children }) {
     return (
         <div className={styles.appContainer}>
             <header>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="navbar navbar-expand-lg navbar-transparent bg-transparent">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">
-                            <img src={LogoPreta} alt="Logo SparkEDU" width="180vw" height="auto" />
-                        </a>
+                            <a class="navbar-brand" href="#">
+                                <img src={LogoBranca} alt="Logo SparkEDU" width="180vw" height="auto"/>
+                            </a>
 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -55,11 +55,11 @@ function HomePageLayout({ onLoginClick, children }) {
                         <div className={styles.mainContent}>
                             <h1>Domine novas habilidades</h1>
                             <h2>Sem dinheiro, apenas conhecimento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href='#'>botao legal</a>
+                            <p>Lorem ipsum dolor sit amet, magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href='#'>Começar já</a>
                         </div>
                         
-                        <img src={mainImage} alt='imagem legal'/>
+                        <img src ={mainImage} alt='imagem legal'/>
                     </section>
 
                     <section className={styles.section2}>

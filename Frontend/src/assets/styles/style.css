@@ -3,10 +3,17 @@ body{
     height: 100%;
     position: relative;
     font-family: "Nunito", sans-serif;
+    background: linear-gradient(135deg, #0057B7, #00BFA6);
 
 }
 
-
+.navbar .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #f0f0f0 !important; /* cor no hover (mais clarinha) */
+  }
 
 .sidebar{
     position: fixed;
