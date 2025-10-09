@@ -3,16 +3,58 @@ body{
     height: 100%;
     position: relative;
     font-family: "Nunito", sans-serif;
-    background: linear-gradient(135deg, #0057B7, #00BFA6);
+    background: linear-gradient(135deg, #9B22A6, #400D3A);
 
 }
 
+
+.navbar{
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    position: fixed;
+    width: 80vw;
+    z-index: 1000;
+}
+
+.d-flex{
+    gap: 1vw;
+}
+
+.d-flex > .button1{
+    border-radius: 10px;
+    width: 5vw;
+    height: 5vh;
+    border: 0.1rem solid #9B22A6;
+    -webkit-text-fill-color: #9B22A6;
+
+}
+
+
+.d-flex > .button2{
+    
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+    background-color: #9B22A6;
+    -webkit-text-fill-color: #fff;
+
+}
+
+
+
 .navbar .nav-link {
-    color: #fff !important;
+    font-weight: bold;
+    color: #000000 !important;
   }
   
   .navbar .nav-link:hover {
-    color: #f0f0f0 !important; /* cor no hover (mais clarinha) */
+    color: #424242 !important; /* cor no hover (mais clarinha) */
+  }
+
+ .links{
+    justify-content: right;
+
   }
 
 .sidebar{

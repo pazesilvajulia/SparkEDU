@@ -1,0 +1,55 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    height: 50vh;
+}
+
+.formContainer h2 {
+    text-align: center;
+    margin: 0 0 5vh 0;
+    font-weight: 700;
+    color: #333;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #7b2cbf; /* Uma cor de destaque, pode ser a cor da sua marca */
+    box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #9B22A6, #9B22A6);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(123, 44, 191, 0.3);
+}

@@ -4,16 +4,22 @@
 }
 
 header{
-    height: 8vh; 
+    height: 13vh; 
 }
 
 
 
 .section1{
     position: relative;
-    height: 92vh;
+    height: 87vh;
     display: flex;
     align-items: center;
+
+    background-image: url('../../assets/images/fotoPrincipal.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 30%; /* Ajuste o tamanho conforme necessário */
+    
 
 }
 
@@ -24,7 +30,7 @@ header{
 }
 
 .mainContent{
-    margin: 0 0 0 3vw;
+    margin: 0 0 0 10vw;
     width: 50vw;
     height: auto;
     display: flex;
@@ -33,13 +39,13 @@ header{
 }
 
 .mainContent > h1{
-    font-size: 9vh;
+    font-size: 7vh;
     font-weight: bold;
 
 }
 
 .mainContent > h2{
-    font-size: 5vh;
+    font-size: 3vh;
     font-weight: bold;
 
 }
@@ -69,8 +75,4 @@ header{
     
 }
 
-.section1 > img{
-    margin: 0 0 0 7vw;
-    height: 60vh;
 
-}

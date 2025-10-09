@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap'; 
 import '../../assets/styles/LoginForm.css';
-import LogoPreta from '../../assets/images/logoPRETA.png';
+import LogoSpark from '../../assets/images/logoSPARKEDU.png';
 
 
 function LoginModal({ show, onHide }) {
@@ -32,7 +32,7 @@ function LoginModal({ show, onHide }) {
             {/* 5. Todo o seu JSX do formulário vai dentro do Modal.Body */}
             <Modal.Body>
                 <form className="login-form" onSubmit={handleSubmit}>
-                    <img src={LogoPreta} alt="Logo SparkEDU" />
+                    <img src={LogoSpark} alt="Logo SparkEDU" />
                     <h2>Bem-vindo de volta!</h2>
 
                     <div className="form-group">

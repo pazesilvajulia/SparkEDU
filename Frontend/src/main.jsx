@@ -9,7 +9,7 @@ import App from './app.jsx'; // Use o nome do arquivo que funcionou (minúsculo 
 import './assets/styles/reset.css'; 
 import './assets/styles/style.css'; 
 
-// Certifique-se de que o ID '#root' corresponde ao seu index.html
+//  ID '#root' tem que corresponder ao index.html
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

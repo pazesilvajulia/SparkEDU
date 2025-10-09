@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProtectedRoutes from './ProtectedRoutes'; // 🚨 IMPORTAÇÃO
 
 // Importe suas páginas
-import LoginPage from '../pages/LoginPage';
 import DashboardPage from '../pages/DashboardPage';
 import HomePagePublic from '../pages/HomePagePublic';
 // ... outras páginas
@@ -18,7 +17,6 @@ function AppRouter() {
                 
                 {/* ROTAS PÚBLICAS (Acessíveis a todos) */}
                 <Route path="/" element={<HomePagePublic />} /> 
-                <Route path="/login" element={<LoginPage />} />
                 <Route path="*" element={<h1>404 | Página Não Encontrada</h1>} />
 
                 {/* 🚨 ROTAS PROTEGIDAS (Apenas para usuários logados) */}
