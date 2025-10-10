@@ -1,6 +1,6 @@
 import React from 'react';
 // Importe aqui o link para o seu arquivo de logo
-import LogoBranca from '../../assets/images/logoBRANCA.png'; 
+
 
 // Esta função representa um item de botão da sua barra lateral
 const NavButton = ({ icon, text, isActive, link }) => (
@@ -17,7 +17,7 @@ function Sidebar() {
     return (
         <nav className="sidebar">
             {/* O logo */}
-            <a href="/"><img className="logo-nav" src={LogoBranca} alt="Logo SparkEDU" /></a>
+            <a href="/"><img className="logo-nav"  alt="Logo SparkEDU" /></a>
             
             <div className="container-nav-btn">
                 

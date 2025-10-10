@@ -24,10 +24,58 @@ header{
 }
 
 .section2{
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(255, 255, 255);
     
 }
+
+.cardContainer{
+    margin: 0 5vw 0 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    -webkit-text-fill-color: black;
+    width: 25vw;
+    height: 65vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    
+}
+
+.card:hover{
+    transform: scale(1.025);
+}
+
+.card > h1{
+    font-weight: bold;
+    background: linear-gradient(135deg, #9B22A6, #400D3A); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+}
+.card > p{
+    padding-top: 1vh;
+    font-size: 2vh;
+    margin: 0vh 3vh 1vh 3vh;
+}
+
+.card > img{
+    border-radius: 5px;
+    width: auto;
+    margin-bottom: 3vh;
+}
+
+
 
 .mainContent{
     margin: 0 0 0 10vw;

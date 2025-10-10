@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from '../assets/styles/HomePage.module.css';
 import LogoSpark from '../assets/images/logoSPARKEDU.png';
+import oque from '../assets/images/oque.jpg';
+import como from '../assets/images/como.jpg';
+import quem from '../assets/images/quem.jpg';
 
 import InlineRegisterForm from '../components/auth/InlineRegisterForm.jsx';
 
@@ -65,6 +68,30 @@ function HomePageLayout({ onLoginClick, onRegisterClick, children }) {
                     </section>
 
                     <section className={styles.section2}>
+
+                        <div className={styles.cardContainer}>
+                            <div className={styles.card}>
+                                <img src={oque} alt="pessoa confusa" height="280vh"/>
+                                
+                                
+                                <h1>O que é?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            
+
+                            <div className={styles.card}>
+                                <img src={como} alt="pessoa tirando selfie" height="280vh"/>
+                                <h1>Como funciona?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+
+                            <div className={styles.card}>
+                                <img src={quem} alt="grupo" height="280vh"/>
+                                <h1>Quem pode usar?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+
+                        </div>
 
                     </section>
 
