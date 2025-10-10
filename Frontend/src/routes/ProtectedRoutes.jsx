@@ -1,13 +1,19 @@
+// components/auth/ProtectedRoutes.jsx (ou onde você o salvou)
+
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 
 const ProtectedRoutes = () => {
-  // 🚨 AQUI VOCÊ FAZ A VERIFICAÇÃO DE AUTENTICAÇÃO REAL.
-  // Por enquanto, vamos simular que o usuário está logado.
-  // Em um projeto real, você verificaria se há um token JWT no localStorage, por exemplo.
-  const isUserAuthenticated = localStorage.getItem('authToken'); // Exemplo real
+  // 1. Verificamos se o token existe no localStorage.
+  //    A chave deve ser 'token', a mesma que usamos no LoginModal.jsx.
+  const token = localStorage.getItem('token'); 
 
-  return isUserAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+  // 2. Se o token existir (não for nulo), o usuário é considerado autenticado.
+  //    - O <Outlet /> é um placeholder que vai renderizar o componente da rota aninhada (no nosso caso, o Dashboard).
+  //
+  // 3. Se o token NÃO existir, o usuário é redirecionado para a página inicial ("/")
+  //    para que possa fazer o login.
+  return token ? <Outlet /> : <Navigate to="/" />;
 };
 
 export default ProtectedRoutes;

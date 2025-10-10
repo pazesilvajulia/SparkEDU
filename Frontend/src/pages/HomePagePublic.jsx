@@ -16,7 +16,6 @@ function HomePage() {
     const handleShowRegister = () => setShowRegisterModal(true);
     const handleCloseRegister = () => setShowRegisterModal(false);
 
-
     return (
         // Usamos um Fragment <>...</> para agrupar os elementos
         <>

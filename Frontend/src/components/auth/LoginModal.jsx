@@ -1,35 +1,68 @@
 // components/auth/LoginModal.jsx
 
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap'; 
 import '../../assets/styles/LoginForm.css';
 import LogoSpark from '../../assets/images/logoSPARKEDU.png';
 
-
 function LoginModal({ show, onHide }) {
     
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSubmit = (e) => {
+    // A "mágica" acontece aqui dentro!
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Tentativa de Login:', { email, password });
-        
-        onHide(); // Fecha o modal em caso de sucesso
+        const loginData = { email, password };
+
+        try {
+            // 1. Faz a chamada para a sua API de login no backend
+            const response = await fetch('http://localhost:5000/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(loginData),
+            });
+
+            const data = await response.json();
+
+            // 2. Verifica se a resposta foi bem-sucedida (status 200)
+            if (response.ok) {
+                alert('Login realizado com sucesso!');
+                
+                // 3. Guarda o "passe VIP" (token) no navegador
+                localStorage.setItem('token', data.token);
+
+                // 3. VERIFIQUE ESTA LINHA
+                navigate('/dashboard'); 
+
+                // 4. Fecha o modal
+                onHide();
+
+                
+
+            } else {
+                // Se o backend retornou um erro (ex: senha errada), mostra a mensagem
+                alert(`Erro: ${data.message}`);
+            }
+
+        } catch (error) {
+            // Se houve um erro de rede (ex: backend desligado)
+            console.error('Falha na comunicação com o servidor:', error);
+            alert('Não foi possível realizar o login. Verifique sua conexão e tente novamente.');
+        }
     };
 
     return (
-        // Usamos o componente Modal como o container principal
         <Modal 
-        show={show} 
-        onHide={onHide} 
-        centered
-        dialogClassName="modalPersonalizado"
+            show={show} 
+            onHide={onHide} 
+            centered
+            dialogClassName="modalPersonalizado"
         >
-            {/* Opcional: um header com botão de fechar nativo do modal */}
             <Modal.Header closeButton></Modal.Header>
 
-            {/* 5. Todo o seu JSX do formulário vai dentro do Modal.Body */}
             <Modal.Body>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <img src={LogoSpark} alt="Logo SparkEDU" />
@@ -61,16 +94,7 @@ function LoginModal({ show, onHide }) {
                     <div className="line"></div>
 
                     <div className="socials">
-                        <a className="btn-socials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="3vh" fill="black" className="bi bi-google" viewBox="0 0 16 16">
-                                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
-                            </svg>
-                        </a>
-                        <a className="btn-socials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="3vh" fill="black" className="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </a>
+                        {/* Seus botões de login social continuam aqui */}
                     </div>
                     <div className="line"></div>
 

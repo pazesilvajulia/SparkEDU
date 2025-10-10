@@ -12,13 +12,9 @@ function InlineRegisterForm() {
         const userData = { name, email, password };
         console.log("Dados para cadastro:", userData);
 
-        // ===================================================================
-        // A LÓGICA DE CONEXÃO COM O BACKEND VEM AQUI
-        // (Exatamente como no modal que fizemos antes)
-        // ===================================================================
-        /*
+        
         try {
-            const response = await fetch('/api/register', {
+            const response = await fetch('http://localhost:5000/api/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(userData),
@@ -38,8 +34,8 @@ function InlineRegisterForm() {
             console.error('Falha na comunicação com o servidor:', error);
             alert('Não foi possível realizar o cadastro. Tente novamente.');
         }
-        */
-        // ===================================================================
+        
+    
     };
 
     return (
